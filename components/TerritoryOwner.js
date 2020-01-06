@@ -5,19 +5,18 @@ import { useSelector, useDispatch } from 'react-redux'
 const TerritoryOwner = () => {
  
   return (
-    <div className="">
-        <div className="frame bg-info" >
+    <div className="frame border border-white">
+        <div className="text-white" >
             Territory Owner Component
         </div>
         <style jsx>{`
             .frame {
-                display: block;
-                height: 100px;
-                color: yellow;
-                z-index 9;
+                height: 400px;
+                width: 100%;
+                background-color:#ff9933;
                 float: right;
+                margin: 00px;
             }
-
         `}</style>
     </div>
   )

@@ -2,13 +2,26 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import { withRedux } from '../lib/redux'
 import useInterval from '../lib/useInterval'
+import Layout from '../components/Layout'
 import Home from '../components/Home'
+import TerritoryOwner from '../components/TerritoryOwner'
 
 const IndexPage = () => {
   return (
     <>
-      <div className="home">
-        <Home />
+      <div className="layout">
+        <Layout>
+          <div className="a">
+            <Home />
+          </div>
+          <div className="">
+            <TerritoryOwner/>
+          </div>
+        </Layout>
+        <style jsx>{`
+
+        `}
+        </style>
       </div>
 
     </>

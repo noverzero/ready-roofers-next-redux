@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import { withRedux } from '../lib/redux'
 import useInterval from '../lib/useInterval'
+import Layout from '../components/Layout'
 import Clock from '../components/clock'
 import Counter from '../components/counter'
 
@@ -17,9 +18,19 @@ const AboutPage = () => {
   }, 1000)
   return (
     <>
-    <div>This is the About Page</div>
+    <Layout>
+    <div className="background">This is the About Page
       <Clock />
       <Counter />
+      <style jsx>{`
+        .background{
+          background-color: SandyBrown;
+          height: 800px;
+        }
+      `}
+      </style>
+    </div>
+    </Layout>
     </>
   )
 }
